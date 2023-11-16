@@ -2,7 +2,7 @@
     <div class="container">
         <h2>Registrar un Nuevo Animal</h2>
         <form id="animal-form" action="save.php" method="POST">
-            <label for="nombres">nombres del Animal:</label>
+            <label for="nombres">Nombre del Animal:</label>
             <input type="text" id="nombres" name="nombres" required placeholder="Ej: Fido">
 
             <label for="especie">Especie:</label>
@@ -14,7 +14,7 @@
             <label for="edad">Edad:</label>
             <input type="number" id="edad" name="edad" required placeholder="Ej: 5">
 
-            <button type="submit">Registrar</button>
+            <button type="submit" name="guardar_registro">Registrar</button>
         </form>
     </div>
 

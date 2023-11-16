@@ -16,19 +16,20 @@ if(mysqli_num_rows($result) ==1) {
 if (isset($_POST['update2'])){
     $codigo = $_GET['id'];
     $nombres = $_POST['nombres'];
-    $especie = $_POST['especie'];
-    $especie = $_POST['raza'];
-    $especie = $_POST['edad'];
+    $especie = $_POST['especie']; // Variable correcta para especie
+    $raza = $_POST['raza']; // Variable para raza
+    $edad = $_POST['edad']; // Variable para edad
+
     $query = "UPDATE mascota SET nombres = '$nombres', especie = '$especie', raza = '$raza', edad = '$edad' WHERE codigo = $codigo";
-	//die( $query);
-    $result = mysqli_query($conn,$query);
+    $result = mysqli_query($conn, $query);
+
     if (!$result){
         echo "El query de actualizar falló";
-    }else{
+    } else {
         ?>
         <script>alert("Registro actualizado");</script>
         <script>
-        window.location = "index.php";
+            window.location = "index.php";
         </script>
         <?php 
     }

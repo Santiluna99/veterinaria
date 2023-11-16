@@ -1,5 +1,6 @@
 <?php include("db.php")?>
 <?php include("includes/headers.php")?>
+<link rel="stylesheet" href="styles2.css">
 
     <div class ="card text-center">
         <div class="card-body">
@@ -10,7 +11,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>nombres Mascota</th>
+                            <th>Nombres Mascota</th>
                             <th>Especie</th>
                             <th>Raza</th>
                             <th>Edad</th>
